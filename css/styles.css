@@ -18,7 +18,7 @@ body{
 
 .container{
     max-width: 120rem;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .site-header{
@@ -59,7 +59,7 @@ body{
 
 
 .logo{
- 
+
 }
 
 .review-section{
@@ -77,11 +77,35 @@ body{
 }
 
 .sidebar{
-  display: inline;
-  width:  30%;
-  height: 800px;
-  float: right;
-  background-color: yellow;
+  display: flex;
+  /*background-color: yellow;*/
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sidebar-title{
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px 25px 0px 5px;
+    font-size: 1.4rem !important;
+}
+.sidebar-recommended-videos{
+    /*background-color: purple;*/
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding: 0px 0px 0px 5px;
+}
+.sidebar-video-description{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    font-size: 1.3rem !important;
+    line-height: 0 !important;
+    padding:0px 0px 0px 10px;
 }
 
 .video-section{
@@ -100,4 +124,3 @@ body{
   float: left;
   background-color: green;
 }
-
